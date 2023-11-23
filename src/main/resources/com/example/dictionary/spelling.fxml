@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="1046.0" prefWidth="1019.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="43.0" layoutY="50.0" text="Spelling">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="186.0" layoutY="40.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="112.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="68.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/speaker-filled-audio-tool_59284.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="660.0" layoutY="50.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="112.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="68.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/pencil_2976243.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="856.0" layoutY="50.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="112.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="68.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/star.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="760.0" layoutY="50.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="112.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="68.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/laundry-basket_15282.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

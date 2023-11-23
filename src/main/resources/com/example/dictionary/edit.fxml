@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="1046.0" prefWidth="1019.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="28.0" layoutY="22.0" prefHeight="994.0" prefWidth="511.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="42.0" layoutY="41.0" text="EDIT WORD">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="143.0" layoutY="111.0" startX="-100.0" />
+            <Label layoutX="43.0" layoutY="217.0" text="Old word" />
+            <Label layoutX="43.0" layoutY="369.0" text="Spelling" />
+            <Label layoutX="43.0" layoutY="497.0" text="Explain" />
+            <TextField layoutX="182.0" layoutY="209.0" />
+            <TextField layoutX="182.0" layoutY="361.0" />
+            <TextField layoutX="182.0" layoutY="497.0" prefHeight="378.0" prefWidth="298.0" />
+            <Button layoutX="401.0" layoutY="901.0" mnemonicParsing="false" style="-fx-background-color: black;">
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: black;">
+                     <image>
+                        <Image url="@../../../images/mark_7510552.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="558.0" layoutY="24.0" prefHeight="994.0" prefWidth="440.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="38.0" layoutY="37.0" text="MESSAGE">
+               <font>
+                  <Font name="System Bold" size="39.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="139.0" layoutY="109.0" startX="-100.0" />
+            <TextField layoutX="39.0" layoutY="137.0" prefHeight="801.0" prefWidth="374.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
