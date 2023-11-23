@@ -1,5 +1,7 @@
 package com.example.dictionary;
 
+import base.DictionaryCommandline;
+import base.Word;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -18,6 +20,7 @@ public class HelloApplication extends Application {
     }
 
     public static void main(String[] args) {
+        DictionaryCommandline dictionaryCommandline = new DictionaryCommandline();
         launch();
     }
 }

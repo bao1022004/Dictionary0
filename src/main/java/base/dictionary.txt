@@ -1,0 +1,7 @@
+bee    con ong
+bird    chim
+cat    con meo
+chicken    ga
+dog    con cho
+fish    ca
+tiger    con ho
