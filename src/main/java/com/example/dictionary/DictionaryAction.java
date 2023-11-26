@@ -90,4 +90,28 @@ public class DictionaryAction implements Initializable {
         return null;
     }
 
+    public void addWord(String newTarget, String newExplain) {
+        ArrayList<Word> words = dictionary.getWords();
+        for (Word word : words) {
+            if(newTarget.equals(word.getWord_target())) {
+                System.out.println("Tu da ton tai trong tu dien. ");
+                return;
+            }
+        }
+        words.add(new Word(newTarget,newExplain));
+        System.out.println("Them tu moi vao tu dien thanh cong. ");
+    }
+
+    public void removeWord(String inputTarget) {
+        ArrayList<Word> words = dictionary.getWords();
+        for (int i = 0; i < words.size(); i++) {
+            if (inputTarget.equals(words.get(i).getWord_target())) {
+                words.remove(i);
+                System.out.println("Da xoa tu khoi tu dien. ");
+                return;
+            }
+        }
+        System.out.println("Khong co tu can xoa trong tu dien. ");
+    }
+
 }
