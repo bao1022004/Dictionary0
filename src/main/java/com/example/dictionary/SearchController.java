@@ -88,6 +88,31 @@ public class SearchController extends DictionaryAction {
         spelling.setText(selectedWord);
         viewWordWebEngine.loadContent(explain, "text/html");
     }
+    @FXML
+    void handleAddWord() {
+        String newTarget = searchBar.getText();
+        String newExplain = spelling.getText();
+        if (!newTarget.isEmpty() && !newExplain.isEmpty()) {
+            addWord(newTarget, newExplain);
+            searchBar.clear();
+            spelling.setText("");
+        }
+        else {
+            System.out.println("Nhap tu can them va giai thich nghia tu do. ");
+        }
+    }
+
+    void handleRemoveWord() {
+        String inputTarget = searchBar.getText();
+        if (!inputTarget.isEmpty()) {
+            removeWord(inputTarget);
+            searchBar.clear();
+            spelling.setText("");
+        }
+        else {
+            System.out.println("Nhap tu can xoa khoi tu dien.");
+        }
+    }
 }
 
 
