@@ -8,6 +8,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.web.WebEngine;
@@ -42,9 +43,11 @@ public class SearchController extends DictionaryAction {
 
     @FXML
     private Button editViewButton;
+    @FXML
+    private Label spelling;
 
     @FXML
-    private ListView<String> listWord;
+    private ListView<String> listWord = new ListView<String>();
     private Parent root;
     private Stage stage;
     private Scene scene;
@@ -79,8 +82,10 @@ public class SearchController extends DictionaryAction {
     @FXML
     void handleSelectWord() {
         String selectedWord = listWord.getSelectionModel().getSelectedItem();
+        System.out.println(selectedWord);
         viewWordWebEngine = explain.getEngine();
         String explain = dictionaryLookup(selectedWord);
+        spelling.setText(selectedWord);
         viewWordWebEngine.loadContent(explain, "text/html");
     }
 }

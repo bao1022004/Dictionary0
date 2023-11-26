@@ -16,8 +16,8 @@
          <children>
             <AnchorPane prefHeight="600.0" prefWidth="350.0" style="-fx-background-color: white;">
                <children>
-                  <TextField fx:id="searchBar" layoutX="25.0" layoutY="25.0" prefHeight="40.0" prefWidth="255.0" onMouseClicked="#handleSelectWord" />
-                  <ListView fx:id="listWord" layoutX="25.0" layoutY="82.0" prefHeight="495.0" prefWidth="300.0" />
+                  <TextField fx:id="searchBar" layoutX="25.0" layoutY="25.0" prefHeight="40.0" prefWidth="255.0" />
+                  <ListView fx:id="listWord" layoutX="25.0" layoutY="82.0" onMouseClicked="#handleSelectWord" prefHeight="495.0" prefWidth="300.0" />
                   <Button fx:id="searchButton" layoutX="285.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleSearch" prefHeight="40.0" prefWidth="40.0" text="Button" />
                </children>
             </AnchorPane>
@@ -51,6 +51,11 @@
                         </ImageView>
                      </graphic>
                   </Button>
+                  <Label fx:id="spelling" layoutX="25.0" layoutY="20.0" prefHeight="40.0" prefWidth="143.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
 
                </children></AnchorPane>
          </children>
