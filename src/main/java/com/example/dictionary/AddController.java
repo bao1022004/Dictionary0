@@ -27,7 +27,7 @@ public class AddController extends DictionaryAction{
     private Parent root;
     private Stage stage;
     private Scene scene;
-
+    
 
     public void switchToSearchScene(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("searchScene.fxml"));
@@ -38,6 +38,22 @@ public class AddController extends DictionaryAction{
     }
     public void switchToEditScene(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("editScene.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void switchToAddScene(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("addScene.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void switchToRemoveScene(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("removeScene.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
